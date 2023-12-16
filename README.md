@@ -7,7 +7,7 @@
 `csv_file` - Add CSV file in the root directory and update the path in `main.py` and also in `mailcert.py`
 
 format
-![In what order to compile the files](/privateforReadme/csv%20format.png)
+![format](image.png)
 
 **Commands =**
 

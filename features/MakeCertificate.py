@@ -29,11 +29,11 @@ def MakeCertificate(student, template, longestSpace, data, index):
         draw.text(xy = (namexpos,y1-80),text=student[2],fill=color,font=textFont)
     # randm num for unique name
     ran = random.randint(1000,9999)
-    # saving file in /img/ folder
-    cert.save(str(f"img/{student[2]}{ran}.png"))
+    # saving file in /output/ folder
+    cert.save(str(f"output/{student[2]}{ran}.png"))
 
     # updating csv
     data.at[index, "isGenerated"] = True
-    data.at[index, "certificateFile"] = str(f"img/{student[2]}{ran}.png")
+    data.at[index, "certificateFile"] = str(f"output/{student[2]}{ran}.png")
     data.to_csv("js-list.csv", index=False)
     
